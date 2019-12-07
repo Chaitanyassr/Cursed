@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Dark-Things.ogg-f18e576a73dc553ca0f107c8190a8735.oggstr"
+
+[deps]
+
+source_file="res://Dark-Things.ogg"
+dest_files=[ "res://.import/Dark-Things.ogg-f18e576a73dc553ca0f107c8190a8735.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

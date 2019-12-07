@@ -1,0 +1,965 @@
+[gd_scene load_steps=82 format=2]
+
+[ext_resource path="res://background1/7.png" type="Texture" id=1]
+[ext_resource path="res://KinematicBody2D.gd" type="Script" id=2]
+[ext_resource path="res://hero/0_Reaper_Man_Slashing_000.png" type="Texture" id=3]
+[ext_resource path="res://hero/0_Reaper_Man_Slashing_001.png" type="Texture" id=4]
+[ext_resource path="res://hero/0_Reaper_Man_Slashing_002.png" type="Texture" id=5]
+[ext_resource path="res://hero/0_Reaper_Man_Slashing_003.png" type="Texture" id=6]
+[ext_resource path="res://hero/0_Reaper_Man_Slashing_004.png" type="Texture" id=7]
+[ext_resource path="res://hero/0_Reaper_Man_Slashing_005.png" type="Texture" id=8]
+[ext_resource path="res://hero/0_Reaper_Man_Slashing_006.png" type="Texture" id=9]
+[ext_resource path="res://hero/0_Reaper_Man_Slashing_007.png" type="Texture" id=10]
+[ext_resource path="res://hero/0_Reaper_Man_Slashing_008.png" type="Texture" id=11]
+[ext_resource path="res://hero/0_Reaper_Man_Slashing_009.png" type="Texture" id=12]
+[ext_resource path="res://hero/0_Reaper_Man_Slashing_010.png" type="Texture" id=13]
+[ext_resource path="res://hero/0_Reaper_Man_Slashing_011.png" type="Texture" id=14]
+[ext_resource path="res://hero/0_Reaper_Man_Run Slashing_000.png" type="Texture" id=15]
+[ext_resource path="res://hero/0_Reaper_Man_Run Slashing_001.png" type="Texture" id=16]
+[ext_resource path="res://hero/0_Reaper_Man_Run Slashing_002.png" type="Texture" id=17]
+[ext_resource path="res://hero/0_Reaper_Man_Run Slashing_003.png" type="Texture" id=18]
+[ext_resource path="res://hero/0_Reaper_Man_Run Slashing_004.png" type="Texture" id=19]
+[ext_resource path="res://hero/0_Reaper_Man_Run Slashing_005.png" type="Texture" id=20]
+[ext_resource path="res://hero/0_Reaper_Man_Run Slashing_006.png" type="Texture" id=21]
+[ext_resource path="res://hero/0_Reaper_Man_Run Slashing_007.png" type="Texture" id=22]
+[ext_resource path="res://hero/0_Reaper_Man_Run Slashing_008.png" type="Texture" id=23]
+[ext_resource path="res://hero/0_Reaper_Man_Run Slashing_009.png" type="Texture" id=24]
+[ext_resource path="res://hero/0_Reaper_Man_Run Slashing_010.png" type="Texture" id=25]
+[ext_resource path="res://hero/0_Reaper_Man_Run Slashing_011.png" type="Texture" id=26]
+[ext_resource path="res://hero/0_Reaper_Man_Idle_000.png" type="Texture" id=27]
+[ext_resource path="res://hero/0_Reaper_Man_Idle_001.png" type="Texture" id=28]
+[ext_resource path="res://hero/0_Reaper_Man_Idle_002.png" type="Texture" id=29]
+[ext_resource path="res://hero/0_Reaper_Man_Idle_003.png" type="Texture" id=30]
+[ext_resource path="res://hero/0_Reaper_Man_Idle_004.png" type="Texture" id=31]
+[ext_resource path="res://hero/0_Reaper_Man_Idle_005.png" type="Texture" id=32]
+[ext_resource path="res://hero/0_Reaper_Man_Idle_006.png" type="Texture" id=33]
+[ext_resource path="res://hero/0_Reaper_Man_Idle_007.png" type="Texture" id=34]
+[ext_resource path="res://hero/0_Reaper_Man_Idle_008.png" type="Texture" id=35]
+[ext_resource path="res://hero/0_Reaper_Man_Idle_009.png" type="Texture" id=36]
+[ext_resource path="res://hero/0_Reaper_Man_Idle_010.png" type="Texture" id=37]
+[ext_resource path="res://hero/0_Reaper_Man_Idle_011.png" type="Texture" id=38]
+[ext_resource path="res://hero/0_Reaper_Man_Idle_012.png" type="Texture" id=39]
+[ext_resource path="res://hero/0_Reaper_Man_Idle_013.png" type="Texture" id=40]
+[ext_resource path="res://hero/0_Reaper_Man_Idle_014.png" type="Texture" id=41]
+[ext_resource path="res://hero/0_Reaper_Man_Idle_015.png" type="Texture" id=42]
+[ext_resource path="res://hero/0_Reaper_Man_Idle_016.png" type="Texture" id=43]
+[ext_resource path="res://hero/0_Reaper_Man_Idle_017.png" type="Texture" id=44]
+[ext_resource path="res://hero/0_Reaper_Man_Jump Start_000.png" type="Texture" id=45]
+[ext_resource path="res://hero/0_Reaper_Man_Jump Start_001.png" type="Texture" id=46]
+[ext_resource path="res://hero/0_Reaper_Man_Jump Start_002.png" type="Texture" id=47]
+[ext_resource path="res://hero/0_Reaper_Man_Jump Start_003.png" type="Texture" id=48]
+[ext_resource path="res://hero/0_Reaper_Man_Jump Start_004.png" type="Texture" id=49]
+[ext_resource path="res://hero/0_Reaper_Man_Jump Start_005.png" type="Texture" id=50]
+[ext_resource path="res://hero/0_Reaper_Man_Running_000.png" type="Texture" id=51]
+[ext_resource path="res://hero/0_Reaper_Man_Running_001.png" type="Texture" id=52]
+[ext_resource path="res://hero/0_Reaper_Man_Running_002.png" type="Texture" id=53]
+[ext_resource path="res://hero/0_Reaper_Man_Running_003.png" type="Texture" id=54]
+[ext_resource path="res://hero/0_Reaper_Man_Running_004.png" type="Texture" id=55]
+[ext_resource path="res://hero/0_Reaper_Man_Running_005.png" type="Texture" id=56]
+[ext_resource path="res://hero/0_Reaper_Man_Running_006.png" type="Texture" id=57]
+[ext_resource path="res://hero/0_Reaper_Man_Running_007.png" type="Texture" id=58]
+[ext_resource path="res://hero/0_Reaper_Man_Running_008.png" type="Texture" id=59]
+[ext_resource path="res://hero/0_Reaper_Man_Running_009.png" type="Texture" id=60]
+[ext_resource path="res://hero/0_Reaper_Man_Running_010.png" type="Texture" id=61]
+[ext_resource path="res://hero/0_Reaper_Man_Running_011.png" type="Texture" id=62]
+[ext_resource path="res://background1/1.png" type="Texture" id=63]
+[ext_resource path="res://background1/2.png" type="Texture" id=64]
+[ext_resource path="res://background1/3.png" type="Texture" id=65]
+[ext_resource path="res://background1/4.png" type="Texture" id=66]
+[ext_resource path="res://background1/5.png" type="Texture" id=67]
+[ext_resource path="res://background1/6.png" type="Texture" id=68]
+[ext_resource path="res://villain.gd" type="Script" id=69]
+[ext_resource path="res://ghost.png" type="Texture" id=70]
+[ext_resource path="res://Area22D.gd" type="Script" id=71]
+[ext_resource path="res://Area2D.gd" type="Script" id=72]
+[ext_resource path="res://The-Island-of-Dr-Sinister.ogg" type="AudioStream" id=73]
+[ext_resource path="res://Area2sdfD.gd" type="Script" id=74]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ) ],
+"loop": true,
+"name": "Action",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ) ],
+"loop": true,
+"name": "Actionrun",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ) ],
+"loop": true,
+"name": "Jump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ) ],
+"loop": true,
+"name": "Run",
+"speed": 5.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 26.3135
+height = 30.3205
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 1216.19, 109.958 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 37.7192, 45.6603 )
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 36.5419, 69.0493 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 430.802, 857.574 )
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 338.719, 339.9 )
+
+[node name="world" type="Node2D"]
+
+[node name="sprite" type="Node2D" parent="."]
+editor/display_folded = true
+
+[node name="7" type="Sprite" parent="sprite"]
+position = Vector2( 829.326, -60.7783 )
+scale = Vector2( 0.951388, 1.24748 )
+texture = ExtResource( 1 )
+
+[node name="8" type="Sprite" parent="sprite"]
+position = Vector2( 841.914, -60.7783 )
+scale = Vector2( 0.938276, 1.24748 )
+texture = ExtResource( 1 )
+offset = Vector2( -1000, 0 )
+
+[node name="9" type="Sprite" parent="sprite"]
+position = Vector2( 786.442, -60.7783 )
+scale = Vector2( 0.909974, 1.24748 )
+texture = ExtResource( 1 )
+offset = Vector2( 2000, 0 )
+
+[node name="10" type="Sprite" parent="sprite"]
+position = Vector2( 786.442, -60.7783 )
+scale = Vector2( 0.909974, 1.24748 )
+texture = ExtResource( 1 )
+offset = Vector2( 3000, 0 )
+
+[node name="11" type="Sprite" parent="sprite"]
+position = Vector2( 786.442, -60.7783 )
+scale = Vector2( 0.909974, 1.24748 )
+texture = ExtResource( 1 )
+offset = Vector2( 4888, 0 )
+
+[node name="12" type="Sprite" parent="sprite"]
+position = Vector2( 786.442, -60.7783 )
+scale = Vector2( 0.909974, 1.24748 )
+texture = ExtResource( 1 )
+offset = Vector2( 6000, 0 )
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+editor/display_folded = true
+script = ExtResource( 2 )
+
+[node name="Sprite" type="AnimatedSprite" parent="KinematicBody2D"]
+position = Vector2( 63.928, 432.529 )
+scale = Vector2( 0.161864, 0.160393 )
+frames = SubResource( 1 )
+animation = "Jump"
+frame = 5
+speed_scale = 3.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
+position = Vector2( 56.9846, 433.163 )
+shape = SubResource( 2 )
+
+[node name="Camera2D" type="Camera2D" parent="KinematicBody2D"]
+offset = Vector2( 300, 300 )
+current = true
+smoothing_enabled = true
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="KinematicBody2D"]
+layer = -4
+
+[node name="1" type="Sprite" parent="KinematicBody2D/ParallaxBackground"]
+position = Vector2( 553.545, 292.558 )
+scale = Vector2( 0.590291, 0.628065 )
+z_index = -1
+texture = ExtResource( 63 )
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="KinematicBody2D/ParallaxBackground"]
+editor/display_folded = true
+motion_scale = Vector2( 4, 2 )
+
+[node name="2" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer"]
+position = Vector2( 518.608, 610.742 )
+scale = Vector2( 0.594649, 0.783038 )
+texture = ExtResource( 64 )
+offset = Vector2( 0, -200 )
+
+[node name="3" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer"]
+position = Vector2( 1659.85, 613.258 )
+scale = Vector2( 0.594649, 0.783038 )
+texture = ExtResource( 64 )
+offset = Vector2( 0, -200 )
+
+[node name="4" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer"]
+position = Vector2( 2800.67, 613.649 )
+scale = Vector2( 0.594649, 0.783038 )
+texture = ExtResource( 64 )
+offset = Vector2( 0, -200 )
+
+[node name="5" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer"]
+position = Vector2( 3941.71, 613.649 )
+scale = Vector2( 0.594649, 0.783038 )
+texture = ExtResource( 64 )
+offset = Vector2( 0, -200 )
+
+[node name="6" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer"]
+position = Vector2( 5083.74, 613.649 )
+scale = Vector2( 0.594649, 0.783038 )
+texture = ExtResource( 64 )
+offset = Vector2( 0, -200 )
+
+[node name="7" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer"]
+position = Vector2( 6225.36, 613.649 )
+scale = Vector2( 0.594649, 0.783038 )
+texture = ExtResource( 64 )
+offset = Vector2( 0, -200 )
+
+[node name="8" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer"]
+position = Vector2( 7366.49, 613.157 )
+scale = Vector2( 0.594649, 0.783038 )
+texture = ExtResource( 64 )
+offset = Vector2( 0, -200 )
+
+[node name="9" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer"]
+position = Vector2( 8508.54, 613.664 )
+scale = Vector2( 0.594649, 0.783038 )
+texture = ExtResource( 64 )
+offset = Vector2( 0, -200 )
+
+[node name="14" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer"]
+position = Vector2( 14191.5, 621.252 )
+scale = Vector2( 0.594649, 0.783038 )
+texture = ExtResource( 64 )
+offset = Vector2( 0, -200 )
+
+[node name="22" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer"]
+position = Vector2( 17335.5, 794.252 )
+scale = Vector2( 0.594649, 0.783038 )
+texture = ExtResource( 64 )
+offset = Vector2( 10000, -400 )
+
+[node name="10" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer"]
+position = Vector2( 9649.89, 613.567 )
+scale = Vector2( 0.594649, 0.783038 )
+texture = ExtResource( 64 )
+offset = Vector2( 0, -200 )
+
+[node name="15" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer"]
+position = Vector2( 15332.8, 621.155 )
+scale = Vector2( 0.594649, 0.783038 )
+texture = ExtResource( 64 )
+offset = Vector2( 0, -200 )
+
+[node name="21" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer"]
+position = Vector2( 18476.8, 794.155 )
+scale = Vector2( 0.594649, 0.783038 )
+texture = ExtResource( 64 )
+offset = Vector2( 10000, -400 )
+
+[node name="11" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer"]
+position = Vector2( 10791.1, 614.154 )
+scale = Vector2( 0.594649, 0.783038 )
+texture = ExtResource( 64 )
+offset = Vector2( 0, -200 )
+
+[node name="23" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer"]
+position = Vector2( 13935.1, 787.154 )
+scale = Vector2( 0.594649, 0.783038 )
+texture = ExtResource( 64 )
+offset = Vector2( 10000, -400 )
+
+[node name="16" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer"]
+position = Vector2( 16474.1, 621.742 )
+scale = Vector2( 0.594649, 0.783038 )
+texture = ExtResource( 64 )
+offset = Vector2( 0, -200 )
+
+[node name="20" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer"]
+position = Vector2( 19618.1, 794.742 )
+scale = Vector2( 0.594649, 0.783038 )
+texture = ExtResource( 64 )
+offset = Vector2( 10000, -400 )
+
+[node name="12" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer"]
+position = Vector2( 11931.7, 615.198 )
+scale = Vector2( 0.594649, 0.783038 )
+texture = ExtResource( 64 )
+offset = Vector2( 0, -200 )
+
+[node name="25" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer"]
+position = Vector2( 15075.7, 788.198 )
+scale = Vector2( 0.594649, 0.783038 )
+texture = ExtResource( 64 )
+offset = Vector2( 10000, -400 )
+
+[node name="18" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer"]
+position = Vector2( 17614.6, 622.785 )
+scale = Vector2( 0.594649, 0.783038 )
+texture = ExtResource( 64 )
+offset = Vector2( 0, -200 )
+
+[node name="26" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer"]
+position = Vector2( 20758.6, 795.785 )
+scale = Vector2( 0.594649, 0.783038 )
+texture = ExtResource( 64 )
+offset = Vector2( 10000, -400 )
+
+[node name="27" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer"]
+position = Vector2( 23043.3, 796.484 )
+scale = Vector2( 0.594649, 0.783038 )
+texture = ExtResource( 64 )
+offset = Vector2( 10000, -400 )
+
+[node name="28" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer"]
+position = Vector2( 24181.3, 796.484 )
+scale = Vector2( 0.594649, 0.783038 )
+texture = ExtResource( 64 )
+offset = Vector2( 10000, -400 )
+
+[node name="13" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer"]
+position = Vector2( 13072.9, 615.198 )
+scale = Vector2( 0.594649, 0.783038 )
+texture = ExtResource( 64 )
+offset = Vector2( 0, -200 )
+
+[node name="24" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer"]
+position = Vector2( 16216.9, 788.198 )
+scale = Vector2( 0.594649, 0.783038 )
+texture = ExtResource( 64 )
+offset = Vector2( 10000, -400 )
+
+[node name="17" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer"]
+position = Vector2( 18755.8, 622.785 )
+scale = Vector2( 0.594649, 0.783038 )
+texture = ExtResource( 64 )
+offset = Vector2( 0, -200 )
+
+[node name="19" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer"]
+position = Vector2( 21899.8, 795.785 )
+scale = Vector2( 0.594649, 0.783038 )
+texture = ExtResource( 64 )
+offset = Vector2( 10000, -400 )
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="KinematicBody2D/ParallaxBackground"]
+editor/display_folded = true
+motion_scale = Vector2( 3, 1 )
+motion_offset = Vector2( 4, 0 )
+
+[node name="3" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer2"]
+position = Vector2( 558.009, 269.653 )
+scale = Vector2( 0.675532, 0.780084 )
+z_index = -1
+texture = ExtResource( 65 )
+
+[node name="5" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer2"]
+position = Vector2( 1854.54, 270.135 )
+scale = Vector2( 0.675532, 0.780084 )
+z_index = -1
+texture = ExtResource( 65 )
+
+[node name="6" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer2"]
+position = Vector2( 2880.95, 269.702 )
+scale = Vector2( 0.675532, 0.780084 )
+z_index = -1
+texture = ExtResource( 65 )
+offset = Vector2( 400, 0 )
+
+[node name="7" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer2"]
+position = Vector2( 4941.6, 226.673 )
+scale = Vector2( 0.675532, 0.780084 )
+z_index = -1
+texture = ExtResource( 65 )
+offset = Vector2( 900, 0 )
+
+[node name="9" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer2"]
+position = Vector2( 6227.01, 216.348 )
+scale = Vector2( 0.675532, 0.780084 )
+z_index = -1
+texture = ExtResource( 65 )
+offset = Vector2( 900, 0 )
+
+[node name="10" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer2"]
+position = Vector2( 7522.76, 221.511 )
+scale = Vector2( 0.675532, 0.780084 )
+z_index = -1
+texture = ExtResource( 65 )
+offset = Vector2( 900, 0 )
+
+[node name="11" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer2"]
+position = Vector2( 8803.01, 226.673 )
+scale = Vector2( 0.675532, 0.780084 )
+z_index = -1
+texture = ExtResource( 65 )
+offset = Vector2( 900, 0 )
+
+[node name="12" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer2"]
+position = Vector2( 10072.3, 232.64 )
+scale = Vector2( 0.675532, 0.780084 )
+z_index = -1
+texture = ExtResource( 65 )
+offset = Vector2( 900, 0 )
+
+[node name="13" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer2"]
+position = Vector2( 11367, 213.023 )
+scale = Vector2( 0.675532, 0.780084 )
+z_index = -1
+texture = ExtResource( 65 )
+offset = Vector2( 900, 0 )
+
+[node name="14" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer2"]
+position = Vector2( 12651.9, 208.119 )
+scale = Vector2( 0.675532, 0.780084 )
+z_index = -1
+texture = ExtResource( 65 )
+offset = Vector2( 900, 0 )
+
+[node name="15" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer2"]
+position = Vector2( 13936.8, 203.215 )
+scale = Vector2( 0.675532, 0.780084 )
+z_index = -1
+texture = ExtResource( 65 )
+offset = Vector2( 900, 0 )
+
+[node name="16" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer2"]
+position = Vector2( 15226.7, 198.311 )
+scale = Vector2( 0.675532, 0.780084 )
+z_index = -1
+texture = ExtResource( 65 )
+offset = Vector2( 900, 0 )
+
+[node name="17" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer2"]
+position = Vector2( 16511.6, 198.311 )
+scale = Vector2( 0.675532, 0.780084 )
+z_index = -1
+texture = ExtResource( 65 )
+offset = Vector2( 900, 0 )
+
+[node name="18" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer2"]
+position = Vector2( 17801.4, 188.502 )
+scale = Vector2( 0.675532, 0.780084 )
+z_index = -1
+texture = ExtResource( 65 )
+offset = Vector2( 900, 0 )
+
+[node name="19" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer2"]
+position = Vector2( 19081.4, 188.502 )
+scale = Vector2( 0.675532, 0.780084 )
+z_index = -1
+texture = ExtResource( 65 )
+offset = Vector2( 900, 0 )
+
+[node name="20" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer2"]
+position = Vector2( 20366.3, 178.694 )
+scale = Vector2( 0.675532, 0.780084 )
+z_index = -1
+texture = ExtResource( 65 )
+offset = Vector2( 900, 0 )
+
+[node name="21" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer2"]
+position = Vector2( 21656.1, 168.885 )
+scale = Vector2( 0.675532, 0.780084 )
+z_index = -1
+texture = ExtResource( 65 )
+offset = Vector2( 900, 0 )
+
+[node name="22" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer2"]
+position = Vector2( 22926.3, 163.981 )
+scale = Vector2( 0.675532, 0.780084 )
+z_index = -1
+texture = ExtResource( 65 )
+offset = Vector2( 900, 0 )
+
+[node name="23" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer2"]
+position = Vector2( 24216.1, 154.173 )
+scale = Vector2( 0.675532, 0.780084 )
+z_index = -1
+texture = ExtResource( 65 )
+offset = Vector2( 900, 0 )
+
+[node name="24" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer2"]
+position = Vector2( 25496.1, 154.173 )
+scale = Vector2( 0.675532, 0.780084 )
+z_index = -1
+texture = ExtResource( 65 )
+offset = Vector2( 900, 0 )
+
+[node name="8" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer2"]
+position = Vector2( 3789.52, 269.702 )
+scale = Vector2( 0.675532, 0.780084 )
+z_index = -1
+texture = ExtResource( 65 )
+offset = Vector2( 900, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="4" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer2"]
+position = Vector2( -738.723, 269.312 )
+scale = Vector2( 0.675532, 0.780084 )
+z_index = -1
+texture = ExtResource( 65 )
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="KinematicBody2D/ParallaxBackground"]
+editor/display_folded = true
+motion_scale = Vector2( 2, 1 )
+
+[node name="4" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer3"]
+position = Vector2( 516.147, 235.302 )
+scale = Vector2( 0.720724, 0.505614 )
+texture = ExtResource( 66 )
+
+[node name="5" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer3"]
+position = Vector2( 1604.35, 232.519 )
+scale = Vector2( 0.720724, 0.505614 )
+texture = ExtResource( 66 )
+offset = Vector2( 400, 0 )
+
+[node name="6" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer3"]
+position = Vector2( 2984.34, 231.91 )
+scale = Vector2( 0.720724, 0.505614 )
+texture = ExtResource( 66 )
+offset = Vector2( 400, 0 )
+
+[node name="8" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer3"]
+position = Vector2( 5706.14, 300.406 )
+scale = Vector2( 0.720724, 0.505614 )
+texture = ExtResource( 66 )
+offset = Vector2( 400, 0 )
+
+[node name="11" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer3"]
+position = Vector2( 8420.73, 332.852 )
+scale = Vector2( 0.720724, 0.505614 )
+texture = ExtResource( 66 )
+offset = Vector2( 400, 0 )
+
+[node name="12" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer3"]
+position = Vector2( 11157, 368.902 )
+scale = Vector2( 0.720724, 0.505614 )
+texture = ExtResource( 66 )
+offset = Vector2( 400, 0 )
+
+[node name="14" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer3"]
+position = Vector2( 13839.1, 397.742 )
+scale = Vector2( 0.720724, 0.505614 )
+texture = ExtResource( 66 )
+offset = Vector2( 400, 0 )
+
+[node name="16" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer3"]
+position = Vector2( 13839.1, 397.742 )
+scale = Vector2( 0.720724, 0.505614 )
+texture = ExtResource( 66 )
+offset = Vector2( 400, 0 )
+
+[node name="24" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer3"]
+position = Vector2( 17962.1, 417.757 )
+scale = Vector2( 0.720724, 0.505614 )
+texture = ExtResource( 66 )
+offset = Vector2( 400, 0 )
+
+[node name="26" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer3"]
+position = Vector2( 20644.1, 451.115 )
+scale = Vector2( 0.720724, 0.505614 )
+texture = ExtResource( 66 )
+offset = Vector2( 400, 0 )
+
+[node name="27" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer3"]
+position = Vector2( 23352.7, 477.801 )
+scale = Vector2( 0.720724, 0.505614 )
+texture = ExtResource( 66 )
+offset = Vector2( 400, 0 )
+
+[node name="30" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer3"]
+position = Vector2( 26014.7, 497.816 )
+scale = Vector2( 0.720724, 0.505614 )
+texture = ExtResource( 66 )
+offset = Vector2( 400, 0 )
+
+[node name="32" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer3"]
+position = Vector2( 28710, 511.159 )
+scale = Vector2( 0.720724, 0.505614 )
+texture = ExtResource( 66 )
+offset = Vector2( 400, 0 )
+
+[node name="7" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer3"]
+position = Vector2( 4358.83, 254.999 )
+scale = Vector2( 0.720724, 0.505614 )
+texture = ExtResource( 66 )
+offset = Vector2( 400, 0 )
+
+[node name="22" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer3"]
+position = Vector2( 4358.83, 254.999 )
+scale = Vector2( 0.720724, 0.505614 )
+texture = ExtResource( 66 )
+offset = Vector2( 400, 0 )
+
+[node name="9" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer3"]
+position = Vector2( 7080.64, 323.494 )
+scale = Vector2( 0.720724, 0.505614 )
+texture = ExtResource( 66 )
+offset = Vector2( 400, 0 )
+
+[node name="19" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer3"]
+position = Vector2( 7080.64, 323.494 )
+scale = Vector2( 0.720724, 0.505614 )
+texture = ExtResource( 66 )
+offset = Vector2( 400, 0 )
+
+[node name="10" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer3"]
+position = Vector2( 9795.23, 355.94 )
+scale = Vector2( 0.720724, 0.505614 )
+texture = ExtResource( 66 )
+offset = Vector2( 400, 0 )
+
+[node name="20" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer3"]
+position = Vector2( 9795.23, 355.94 )
+scale = Vector2( 0.720724, 0.505614 )
+texture = ExtResource( 66 )
+offset = Vector2( 400, 0 )
+
+[node name="13" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer3"]
+position = Vector2( 12531.5, 391.99 )
+scale = Vector2( 0.720724, 0.505614 )
+texture = ExtResource( 66 )
+offset = Vector2( 400, 0 )
+
+[node name="21" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer3"]
+position = Vector2( 12531.5, 391.99 )
+scale = Vector2( 0.720724, 0.505614 )
+texture = ExtResource( 66 )
+offset = Vector2( 400, 0 )
+
+[node name="15" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer3"]
+position = Vector2( 15213.6, 420.831 )
+scale = Vector2( 0.720724, 0.505614 )
+texture = ExtResource( 66 )
+offset = Vector2( 400, 0 )
+
+[node name="23" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer3"]
+position = Vector2( 15213.6, 420.831 )
+scale = Vector2( 0.720724, 0.505614 )
+texture = ExtResource( 66 )
+offset = Vector2( 400, 0 )
+
+[node name="17" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer3"]
+position = Vector2( 16590.7, 391.99 )
+scale = Vector2( 0.720724, 0.505614 )
+texture = ExtResource( 66 )
+offset = Vector2( 400, 0 )
+
+[node name="18" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer3"]
+position = Vector2( 16590.7, 391.99 )
+scale = Vector2( 0.720724, 0.505614 )
+texture = ExtResource( 66 )
+offset = Vector2( 400, 0 )
+
+[node name="25" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer3"]
+position = Vector2( 19272.7, 425.348 )
+scale = Vector2( 0.720724, 0.505614 )
+texture = ExtResource( 66 )
+offset = Vector2( 400, 0 )
+
+[node name="28" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer3"]
+position = Vector2( 21981.3, 452.034 )
+scale = Vector2( 0.720724, 0.505614 )
+texture = ExtResource( 66 )
+offset = Vector2( 400, 0 )
+
+[node name="29" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer3"]
+position = Vector2( 24643.3, 472.049 )
+scale = Vector2( 0.720724, 0.505614 )
+texture = ExtResource( 66 )
+offset = Vector2( 400, 0 )
+
+[node name="31" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer3"]
+position = Vector2( 27338.6, 485.392 )
+scale = Vector2( 0.720724, 0.505614 )
+texture = ExtResource( 66 )
+offset = Vector2( 400, 0 )
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="KinematicBody2D/ParallaxBackground"]
+
+[node name="5" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer4"]
+position = Vector2( 540.028, 289.213 )
+scale = Vector2( 0.63876, 0.365625 )
+texture = ExtResource( 67 )
+
+[node name="7" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer4"]
+position = Vector2( 2011.75, 1020.65 )
+scale = Vector2( 0.63876, 0.365625 )
+texture = ExtResource( 67 )
+offset = Vector2( 0, -2000 )
+
+[node name="9" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer4"]
+position = Vector2( 3492.82, 1020.65 )
+scale = Vector2( 0.63876, 0.365625 )
+texture = ExtResource( 67 )
+offset = Vector2( 0, -2000 )
+
+[node name="12" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer4"]
+position = Vector2( 4983.7, 1025.55 )
+scale = Vector2( 0.63876, 0.365625 )
+texture = ExtResource( 67 )
+offset = Vector2( 0, -2000 )
+
+[node name="14" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer4"]
+position = Vector2( 6474.57, 1030.46 )
+scale = Vector2( 0.63876, 0.365625 )
+texture = ExtResource( 67 )
+offset = Vector2( 0, -2000 )
+
+[node name="16" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer4"]
+position = Vector2( 7965.45, 1030.46 )
+scale = Vector2( 0.63876, 0.365625 )
+texture = ExtResource( 67 )
+offset = Vector2( 0, -2000 )
+
+[node name="6" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer4"]
+position = Vector2( -59.1089, 267.682 )
+scale = Vector2( 0.310994, 0.487717 )
+texture = ExtResource( 68 )
+
+[node name="8" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer4"]
+position = Vector2( 1412.61, 1200.19 )
+scale = Vector2( 0.310994, 0.487717 )
+texture = ExtResource( 68 )
+offset = Vector2( 0, -2000 )
+
+[node name="10" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer4"]
+position = Vector2( 2893.68, 1200.19 )
+scale = Vector2( 0.310994, 0.487717 )
+texture = ExtResource( 68 )
+offset = Vector2( 0, -2000 )
+
+[node name="11" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer4"]
+position = Vector2( 4384.56, 1205.09 )
+scale = Vector2( 0.310994, 0.487717 )
+texture = ExtResource( 68 )
+offset = Vector2( 0, -2000 )
+
+[node name="13" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer4"]
+position = Vector2( 5875.44, 1210 )
+scale = Vector2( 0.310994, 0.487717 )
+texture = ExtResource( 68 )
+offset = Vector2( 0, -2000 )
+
+[node name="15" type="Sprite" parent="KinematicBody2D/ParallaxBackground/ParallaxLayer4"]
+position = Vector2( 7366.31, 1210 )
+scale = Vector2( 0.310994, 0.487717 )
+texture = ExtResource( 68 )
+offset = Vector2( 0, -2000 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+editor/display_folded = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 1172.18, 587.539 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 3598.03, 588.377 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 6002.59, 587.377 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -141.972, 1016.49 )
+rotation = -1.5708
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 6413.17, 576.049 )
+rotation = -1.5708
+shape = SubResource( 3 )
+
+[node name="villian" type="Node" parent="."]
+editor/display_folded = true
+
+[node name="villain" type="KinematicBody2D" parent="villian"]
+script = ExtResource( 69 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="villian/villain"]
+position = Vector2( 1768.24, 384.281 )
+shape = SubResource( 5 )
+
+[node name="FemaleZombie2" type="Sprite" parent="villian/villain"]
+position = Vector2( 1776.45, 403.156 )
+scale = Vector2( 0.443493, 0.416993 )
+texture = ExtResource( 70 )
+
+[node name="Area2D" type="Area2D" parent="villian/villain"]
+script = ExtResource( 71 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="villian/villain/Area2D"]
+position = Vector2( 1766.47, 400.159 )
+shape = SubResource( 6 )
+
+[node name="Timer" type="Timer" parent="villian/villain/Area2D"]
+
+[node name="CanvasModulate" type="CanvasModulate" parent="villian/villain/Area2D"]
+visible = false
+color = Color( 0.92549, 0.0745098, 0.0745098, 1 )
+
+[node name="villain2" type="KinematicBody2D" parent="villian"]
+position = Vector2( 374.924, 3.6051 )
+script = ExtResource( 69 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="villian/villain2"]
+position = Vector2( 1768.24, 384.281 )
+shape = SubResource( 5 )
+
+[node name="FemaleZombie2" type="Sprite" parent="villian/villain2"]
+position = Vector2( 1776.45, 403.156 )
+scale = Vector2( 0.443493, 0.416993 )
+texture = ExtResource( 70 )
+flip_h = true
+
+[node name="Area2D" type="Area2D" parent="villian/villain2"]
+script = ExtResource( 71 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="villian/villain2/Area2D"]
+position = Vector2( 1766.47, 400.159 )
+shape = SubResource( 6 )
+
+[node name="Timer" type="Timer" parent="villian/villain2/Area2D"]
+
+[node name="CanvasModulate" type="CanvasModulate" parent="villian/villain2/Area2D"]
+visible = false
+color = Color( 0.92549, 0.0745098, 0.0745098, 1 )
+
+[node name="villain3" type="KinematicBody2D" parent="villian"]
+position = Vector2( 1247.34, 0 )
+script = ExtResource( 69 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="villian/villain3"]
+position = Vector2( 1768.24, 384.281 )
+shape = SubResource( 5 )
+
+[node name="FemaleZombie2" type="Sprite" parent="villian/villain3"]
+position = Vector2( 1776.45, 403.156 )
+scale = Vector2( 0.443493, 0.416993 )
+texture = ExtResource( 70 )
+
+[node name="Area2D" type="Area2D" parent="villian/villain3"]
+script = ExtResource( 71 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="villian/villain3/Area2D"]
+position = Vector2( 1766.47, 400.159 )
+shape = SubResource( 6 )
+
+[node name="Timer" type="Timer" parent="villian/villain3/Area2D"]
+
+[node name="CanvasModulate" type="CanvasModulate" parent="villian/villain3/Area2D"]
+visible = false
+color = Color( 0.92549, 0.0745098, 0.0745098, 1 )
+
+[node name="villain4" type="KinematicBody2D" parent="villian"]
+position = Vector2( -721.008, 7.21008 )
+script = ExtResource( 69 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="villian/villain4"]
+position = Vector2( 1768.24, 384.281 )
+shape = SubResource( 5 )
+
+[node name="FemaleZombie2" type="Sprite" parent="villian/villain4"]
+position = Vector2( 1776.45, 403.156 )
+scale = Vector2( 0.443493, 0.416993 )
+texture = ExtResource( 70 )
+
+[node name="Area2D" type="Area2D" parent="villian/villain4"]
+script = ExtResource( 71 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="villian/villain4/Area2D"]
+position = Vector2( 1766.47, 400.159 )
+shape = SubResource( 6 )
+
+[node name="Timer" type="Timer" parent="villian/villain4/Area2D"]
+
+[node name="CanvasModulate" type="CanvasModulate" parent="villian/villain4/Area2D"]
+visible = false
+color = Color( 0.92549, 0.0745098, 0.0745098, 1 )
+
+[node name="villain5" type="KinematicBody2D" parent="villian"]
+position = Vector2( 1935.9, -10.8151 )
+script = ExtResource( 69 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="villian/villain5"]
+position = Vector2( 1768.24, 384.281 )
+shape = SubResource( 5 )
+
+[node name="FemaleZombie2" type="Sprite" parent="villian/villain5"]
+position = Vector2( 1776.45, 403.156 )
+scale = Vector2( 0.443493, 0.416993 )
+texture = ExtResource( 70 )
+flip_h = true
+
+[node name="Area2D" type="Area2D" parent="villian/villain5"]
+script = ExtResource( 71 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="villian/villain5/Area2D"]
+position = Vector2( 1766.47, 400.159 )
+shape = SubResource( 6 )
+
+[node name="Timer" type="Timer" parent="villian/villain5/Area2D"]
+
+[node name="CanvasModulate" type="CanvasModulate" parent="villian/villain5/Area2D"]
+visible = false
+color = Color( 0.92549, 0.0745098, 0.0745098, 1 )
+
+[node name="Area2D" type="Area2D" parent="."]
+editor/display_folded = true
+script = ExtResource( 72 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 6690.15, -50.1157 )
+shape = SubResource( 4 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 73 )
+autoplay = true
+
+[node name="text" type="Node2D" parent="."]
+
+[node name="Control" type="Control" parent="text"]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Label" type="Label" parent="text/Control"]
+margin_left = 257.138
+margin_top = 187.01
+margin_right = 503.138
+margin_bottom = 201.01
+text = "Avoid shadow ghost and reach the end"
+
+[node name="Area2D" type="Area2D" parent="text"]
+editor/display_folded = true
+script = ExtResource( 74 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="text/Area2D"]
+position = Vector2( 394.508, 228.543 )
+shape = SubResource( 7 )
+[connection signal="timeout" from="villian/villain/Area2D/Timer" to="villian/villain/Area2D" method="_on_Timer_timeout"]
+[connection signal="timeout" from="villian/villain2/Area2D/Timer" to="villian/villain2/Area2D" method="_on_Timer_timeout"]
+[connection signal="timeout" from="villian/villain3/Area2D/Timer" to="villian/villain3/Area2D" method="_on_Timer_timeout"]
+[connection signal="timeout" from="villian/villain4/Area2D/Timer" to="villian/villain4/Area2D" method="_on_Timer_timeout"]
+[connection signal="timeout" from="villian/villain5/Area2D/Timer" to="villian/villain5/Area2D" method="_on_Timer_timeout"]

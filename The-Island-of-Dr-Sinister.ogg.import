@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/The-Island-of-Dr-Sinister.ogg-04fb2aa8ce302d1000efc190eb2ff01b.oggstr"
+
+[deps]
+
+source_file="res://The-Island-of-Dr-Sinister.ogg"
+dest_files=[ "res://.import/The-Island-of-Dr-Sinister.ogg-04fb2aa8ce302d1000efc190eb2ff01b.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
